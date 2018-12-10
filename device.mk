@@ -281,6 +281,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bionic.ld.warning=0
+
 # ADB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=adb \
