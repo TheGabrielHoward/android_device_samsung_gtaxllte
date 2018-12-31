@@ -31,3 +31,9 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T585
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=gtaxlltexx \
+    PRIVATE_BUILD_DESC="gtaxlltexx-user 7.0 NRD90M T585XXU2BQI9 release-keys"
+
+BUILD_FINGERPRINT := samsung/gtaxlltexx/gtaxllte:7.0/NRD90M/T585XXU2BQI9:user/release-keys
