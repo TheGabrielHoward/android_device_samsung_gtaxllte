@@ -2,7 +2,7 @@
 allow init bluetooth_device:chr_file write;
 
 #============= shell ==============
-allow shell hal_telephony_hwservice:hwservice_manager add;
+#allow shell hal_telephony_hwservice:hwservice_manager add;
 allow shell mif_device:chr_file ioctl;
 allow shell radio_data_file:dir getattr;
 allow shell rild_exec:file execute_no_trans;
@@ -25,12 +25,12 @@ allow shell self:udp_socket ioctl;
 allow shell shell:udp_socket ioctl;
 
 #============= untrusted_app ==============
-allow untrusted_app proc_vmstat:file { getattr open };
+allow untrusted_app proc_vmstat:file { getattr };
 
 #============= rild ==============
 allowxperm rild self:udp_socket ioctl priv_sock_ioctls;
 allow rild proc_qtaguid_stat:file { open read getattr };
-allow rild default_prop:property_service set;
+#allow rild default_prop:property_service set;
 allow rild sec_efs_file:dir search;
 
 #============= hal_sensors_default ==============
