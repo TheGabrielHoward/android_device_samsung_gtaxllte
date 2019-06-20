@@ -279,9 +279,6 @@
       The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- Enable Night display, which requires HWC 2.0. -->
-    <bool name="config_nightDisplayAvailable">true</bool>
-
     <integer name="config_deviceLightCapabilities">0</integer>
 
     <!-- Hardware keys present on the device, stored as a bit field.
