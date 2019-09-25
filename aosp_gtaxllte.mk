@@ -33,13 +33,12 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# PixelExperience stuff.
+# Inherit some common  Evolution X stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm64
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=gtaxlltexx \
-    PRIVATE_BUILD_DESC="gtaxlltexx-user 8.1.0 M1AJQ T585XXU4CRK5 release-keys"
+CUSTOM_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys
