@@ -337,3 +337,9 @@ endif
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/gtaxllte/gtaxllte-vendor.mk)
+
+# Evolution X Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.evolution.build_donate_url=https://paypal.me/thegabrielhoward \
+    org.evolution.build_maintainer=GabrielHoward \
+    org.evolution.build_support_url=https://t.me/EvolutionXgtaxlwifi
