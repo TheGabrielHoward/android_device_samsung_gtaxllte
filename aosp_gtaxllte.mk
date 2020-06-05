@@ -35,7 +35,7 @@ PRODUCT_NAME := aosp_gtaxllte
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T585
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
