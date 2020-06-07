@@ -1,64 +1,20 @@
-Device configuration for the Samsung Galaxy Tab A
+# Device Tree for Samsung Galaxy Tab A6 (gtaxllte)
 
-Copyright (C) 2017 The LineageOS Project
-Copyright (C) 2017 Valera Chigir <valera1978@tut.by>
+Copyright 2016-2020, The Android Open Source Project  
+Copyright 2020, Gabriel Howard 
 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
+The Galaxy Tab A6 (codenamed _"gtaxllte"_) is a mid-range tablet from Samsung.
+Released in 2016.
 
-      http://www.apache.org/licenses/LICENSE-2.0
-
-------------------------------------------------------------------
-
-* Description
-
-  This repository is for LineageOS on Samsung Galaxy Tab A (gtaxllte)
-
-* How To Build LineageOS for Samsung Galaxy Tab A
-
-  - Make a workspace
-
-mkdir cm17
-cd cm17
-
-  - Do repo init & sync
-
-repo init -u git://github.com/LineageOS/android.git -b lineage-17.0
-repo init -u git://github.com/crdroidandroid/android.git -b 10.0
-
-  - Create .repo/local_manifests/roomservice.xml with the following content:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-  <project name="Valera1978/android_device_samsung_gtaxllte" path="device/samsung/gtaxllte" remote="github" />
-  <project name="Valera1978/android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="github" />
-  <project name="Valera1978/android_vendor_samsung_gtaxllte" path="vendor/samsung/gtaxllte" remote="github" />
-
-  <project name="Valera1978/android_hardware_samsung" path="hardware/samsung" remote="github" />
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
-
-</manifest>
-```
-
-repo sync
-
-  - Copy proprietary vendor files
-
-  There are two options to to that. Connect your device with adb enabled and run:
-
-./extract-files.sh
-
-  Or if you have the system image unpacked on your disk, then simply run:
-
-    STOCK_ROM_DIR=/path/to/system ./extract-files.sh
-
-  - Setup environment
-
-. build/envsetup.sh
-
-  - Build cm17
-
-brunch gtaxllte
+Basic        | Spec Sheet
+------------:|:-------------------------
+Chipset      | Exynos7870
+CPU          | Octa-core (4 x 1.6 GHz, 4 x 1.0 GHz) Cortex-A53
+GPU          | Mali-T830 MP1
+RAM          | 2GB
+Storage      | 16GB/32GB (Expansible with SD)
+Battery      | Non-removable Li-Ion 7300 mAh battery
+Display      | 1920x1080 pixels (442 ppi)
+Rear Camera  | 8 MP, f/1.9, AF, LED flash
+Front Camera | 2 MP, f/2.2
+Shipped Android Version | 6.0.1
