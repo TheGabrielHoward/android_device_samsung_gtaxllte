@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "thegabrielhoward",
+    "repository": "vendor_samsung",
+    "target_path": "vendor/samsung/gtaxllte",
+    "branch": "gtaxllte-lineage-17.1_64"
+  },
+  {
+    "remote": "followmsi",
+    "repository": "android_kernel_samsung_exynos7870",
+    "target_path": "kernel/samsung/exynos7870",
+    "branch": "10-m105"
+  },
+  {
+    "remote": "followmsi",
+    "repository": "android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "branch": "pixel-ten"
+  }
+]
